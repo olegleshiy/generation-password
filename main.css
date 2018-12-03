@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    background-color: rgba(243, 243, 243, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    height: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(225, 225, 225, .5);
+}
+
+h2{
+    text-transform: uppercase;
+    padding: 2% 0;
+}
+
+.section{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.section-container{
+    width: 300px;
+    padding: 2% 0;
+}
+
+h4{
+    padding-top: 3%;
+}
+
+p{
+    display: flex;
+    padding-top: 1.5%;
+    justify-content: space-between;
+    width: 90%;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 3% 0;
+    width: 90%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #959597;
+    border-radius: 25px;
+    border: 0px solid #000101;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #0c0258;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -2.6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #b5b066;
+}
+
+input{
+    outline: none;
+    margin: 0.5% 0;
+}
+
+input[type="button"]{
+    margin-top: 1.5%;
+    padding: 1.5% 3%;
+    border: 2px solid #878787;
+    border-radius: 5px;
+    background: #000;
+    color: #bcbcbc;
+    box-shadow: #878787 2px 2px 2px;
+    transition: all 0.3s;
+    outline: none;
+    font-weight: bold;
+}
+
+.button-shadow{
+    box-shadow: #878787 0 0 0;
+}
+
+input:hover{
+    border-color: #bfbf00;
+    color: #fff;
+}
+
+.result-text{
+    padding-top: 6%;
+}
+
+.result{
+    padding-left: 2%;
+}
+
+.result-info{
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.5s;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(80, 80, 80, 0.8);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.copyright{
+    font-weight: 400;
+    padding: 2% 0;
+}
+
+@media only screen and (max-width : 480px){
+    body{
+        font-size: 0.9rem;
+    }
+
+}
