@@ -87,16 +87,19 @@ function getArrayPassword(){
     if(special.checked) {
         passwordArray = passwordArray.concat(specialCharacters);
     }
+    if(passwordArray.length == 0) {
+        alert("ВЫБЕРИТЕ ОДИН ИЛИ НЕСКОЛЬКО СИМВОЛОВ");
+    }else{
+        passwordArray.sort(arrayRandom);
 
-    passwordArray.sort(arrayRandom);
+        let out = '';
 
-    let out = '';
-
-    for( let i = 0; i < parseInt(lengthRange.value); i++ ) {
-        out += passwordArray[randomInteger(0, passwordArray.length-1)];
+    
+        for( let i = 0; i < parseInt(lengthRange.value); i++ ) {
+            out += passwordArray[randomInteger(0, passwordArray.length-1)];
+        }
+        result.innerHTML = out;
     }
-
-    result.innerHTML = out;
 }
 
 // get random integer;
@@ -169,6 +172,7 @@ button.addEventListener("touchend", () => {
     }
 
 });
+
 
 getAndInsertLengthPassword();
 isChecked ();

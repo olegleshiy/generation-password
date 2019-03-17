@@ -33,7 +33,7 @@ h2{
 }
 
 .section-container{
-    width: 300px;
+    width: 340px;
     padding: 2% 0;
 }
 
@@ -86,6 +86,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 input{
     outline: none;
     margin: 0.5% 0;
+    cursor: pointer;
 }
 
 input[type="button"]{
@@ -115,7 +116,10 @@ input:hover{
 }
 
 .result{
-    padding-left: 2%;
+    font-size: 0.9rem;
+    padding-left: 1%;
+    letter-spacing: -0.5px;
+    cursor: pointer;
 }
 
 .result-info{
@@ -142,5 +146,11 @@ input:hover{
     body{
         font-size: 0.9rem;
     }
-
+    .section-container{
+        width: 300px;
+        padding: 2% 0;
+    }
+    .result{
+        font-size: 0.750rem;
+    }
 }
