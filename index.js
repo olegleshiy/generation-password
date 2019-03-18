@@ -44,8 +44,9 @@ function getAndInsertLengthPassword() {
     lengthPassword.innerHTML = lengthRange.value;
 
     infoPassword();
-    getArrayPassword();
 
+    let arr = isChecked();
+    arr.length >= 1 ? getArrayPassword() : false;
 }
 
 // clear array "el";
@@ -60,7 +61,7 @@ function isChecked (){
             el.push(input[i]);
         }
     }
-
+    return el;
 }
 
 // create array "passwordArray";
