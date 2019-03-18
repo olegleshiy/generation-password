@@ -20,7 +20,7 @@ let el = [];
 
 function getYear () {
     let currentYear = new Date().getFullYear();
-    year.innerHTML = currentYear;
+    year.innerHTML = `${currentYear}`;
 }
 getYear();
 // copy password to clipboard
