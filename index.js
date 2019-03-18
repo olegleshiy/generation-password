@@ -14,8 +14,15 @@ let result = document.querySelector(".result");
 let resultInfo = document.querySelector(".result-info");
 let button = document.querySelector(".button");
 let input = document.querySelectorAll("input");
+let year = document.querySelector(".year");
 let el = [];
 
+
+function getYear () {
+    let currentYear = new Date().getFullYear();
+    year.innerHTML = currentYear;
+}
+getYear();
 // copy password to clipboard
 copy.addEventListener("click", () => {
 
@@ -88,14 +95,13 @@ function getArrayPassword(){
     if(special.checked) {
         passwordArray = passwordArray.concat(specialCharacters);
     }
-    if(passwordArray.length == 0) {
+    if(passwordArray.length === 0) {
         alert("ВЫБЕРИТЕ ОДИН ИЛИ НЕСКОЛЬКО СИМВОЛОВ");
     }else{
         passwordArray.sort(arrayRandom);
 
         let out = '';
 
-    
         for( let i = 0; i < parseInt(lengthRange.value); i++ ) {
             out += passwordArray[randomInteger(0, passwordArray.length-1)];
         }
@@ -158,7 +164,6 @@ button.addEventListener("mouseup", () => {
     }
 
 });
-
 button.addEventListener("touchstart", () => {
 
     if(!false) {
@@ -173,7 +178,6 @@ button.addEventListener("touchend", () => {
     }
 
 });
-
 
 getAndInsertLengthPassword();
 isChecked ();
