@@ -3,15 +3,20 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body{
     font-size: 1rem;
     font-family: Arial, sans-serif;
     background-color: rgba(243, 243, 243, 0.8);
     width: 100%;
-    height: 100%;
 }
 
 .wrapper{
+    display: flex;
+    flex-direction: column;
     height: 100%;
 }
 
@@ -23,11 +28,12 @@ body{
 
 h2{
     text-transform: uppercase;
-    padding: 2% 0;
+    padding: 20px 0;
 }
 
 .section{
     display: flex;
+    flex-grow: 1;
     height: 100%;
     justify-content: center;
 }
@@ -132,14 +138,12 @@ input:hover{
     display: flex;
     justify-content: center;
     background-color: rgba(80, 80, 80, 0.8);
-    position: absolute;
     width: 100%;
-    bottom: 0;
 }
 
 .copyright{
     font-weight: 400;
-    padding: 2% 0;
+    padding: 20px 0;
 }
 
 @media only screen and (max-width : 480px){
