@@ -117,6 +117,10 @@ input:hover{
     color: #fff;
 }
 
+input[type="button"]:active {
+    box-shadow: #878787 0 0 0;
+}
+
 .result-text{
     padding-top: 6%;
 }
